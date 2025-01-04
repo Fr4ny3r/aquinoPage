@@ -270,6 +270,14 @@ to {
 
 }
 
+.kp{
+    position: absolute;
+    font-family: "kanit", serif;
+    left: 10px;
+    top: 95%;
+    color: rgba(255, 255, 255, 0.63);
+}.kp:hover{cursor: pointer;}
+
 .b-play {
     color: rgb(255, 255, 255);
     font-size: 25px;
@@ -505,4 +513,3 @@ canvas{
     top: 50%;
     transform: translate(-50%,-50%);
 }
-
