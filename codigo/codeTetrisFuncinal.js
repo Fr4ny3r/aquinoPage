@@ -10,9 +10,12 @@ bPlay.addEventListener("click",()=>{
     let cuadroS = document.createElement("div")
     let title = document.createElement("div")
     let bStop = document.createElement("button")
+    let kp = document.createElement("span")
     title.textContent = "Tetris"
     bStop.textContent = "Salir"
+    kp.textContent = "Tetris creado gracias a @midulive (es muy dificil :v)"
     cuadro.classList.add("cuadro")
+    kp.classList.add("kp")
     cuadrot.classList.add("gameT")
     bStop.classList.add("b-stop")
     score.classList.add("score-tetris")
@@ -23,7 +26,10 @@ bPlay.addEventListener("click",()=>{
     cuadro.appendChild(cuadrot);
     cuadro.appendChild(score);
     cuadro.appendChild(title);
+    cuadro.appendChild(kp);
     cuadro.appendChild(bStop);
+
+    kp.addEventListener("click",()=>{window.open("https://www.youtube.com/@midulive")})
 
 
 
