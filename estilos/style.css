@@ -39,7 +39,6 @@ body{
     animation: mover-i 1s both 4s;    
     /* filter: drop-shadow(0px 0px 200px rgba(0, 0, 0, 0.5)) invert(100%) brightness(110%) opacity(0%); */
     filter: drop-shadow(0px 0px 200px rgba(0, 0, 0, 0.5)) invert(100%) brightness(110%) opacity(0%);
-    filter:  invert(100%) brightness(110%) opacity(0%);
 
 }
 @keyframes mover-i {
@@ -47,8 +46,7 @@ body{
         left: 50%;
         top: 50%;
         width: 500px;
-        /* filter: drop-shadow(0px 0px 200px rgb(0, 0, 0, 0.5)) invert(100%) brightness(110%) opacity(0%); */
-        filter:  invert(100%) brightness(110%) opacity(0%);
+        filter: drop-shadow(0px 0px 200px rgb(0, 0, 0, 0.5)) invert(100%) brightness(110%) opacity(0%);
     }
 
     100%{
@@ -56,8 +54,7 @@ body{
         top: 50%;
         width: 750px;
         transform: translate(0%, -50%);
-        /* filter: drop-shadow(0px 0px 200px rgb(0, 0, 0, 0.5)) invert(100%) brightness(110%) opacity(100%); */
-        filter:  invert(100%) brightness(110%) opacity(100%);
+        filter: drop-shadow(0px 0px 200px rgb(0, 0, 0, 0.5)) invert(100%) brightness(110%) opacity(100%);
   
     }
 }
@@ -84,7 +81,7 @@ body{
     color: white;
     text-decoration: none;
     font-size: 70px;
-    /* text-shadow: 0px 0px 200px rgba(255, 255, 255, 0.5); */
+    text-shadow: 0px 0px 200px rgba(255, 255, 255, 0.5);
     filter: opacity(0%);
     animation: aparicion 1s both 0s;
     user-select: none;
@@ -164,10 +161,10 @@ body{
     border-radius: 8px; 
     overflow: hidden;
 }.cont-publi:hover{box-shadow: 0px 0px 30px 2px rgba(7, 252, 117, 0.411); cursor: pointer;}
-.cont-publi > img {position: relative;width: 800px;filter: opacity(30%);top: -140px;}
+.cont-publi > img {position: relative;width: 380px;filter: opacity(30%);top: -100px; left: 80px;}
 .cont-publi > .shadow-publi {
     position: relative;
-    top:-495px;
+    top:-430px;
     margin: auto;
     width: 100%;
     border-radius: 8px;
@@ -183,7 +180,7 @@ body{
     font-family: "Pixelify Sans", serif;
 }.text-shadow > h2{position:relative;font-size: 50px;top:8px;}
 .text-shadow > p{position: relative;font-size: 25px; top: -23px;left: 15px; color: rgb(189, 209, 8);}
-.text-shadow > .p2{position: relative;font-size: 25px; top: -25px;left: 60px; color: springgreen;}
+.text-shadow > .p2{position: relative;font-size: 25px; top: -25px;left: 20px; color: springgreen;}
 .text-shadow-btn{position: absolute; width: 100px; height: 40px;top: 125px; left: 280px; color: black; border: none; background: green}.text-shadow-btn:hover{background: rgb(0, 88, 0); cursor: pointer;}
 .text-shadow-img{position: absolute; width: 230px; top: -28px; left: 460px;filter: invert(100%); animation: vuelta 4s infinite .2s;}
  
