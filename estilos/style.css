@@ -1,0 +1,568 @@
+*{
+    color: white;
+}
+
+
+body{
+    background: rgb(3, 3, 3);
+    overflow-x: hidden;
+
+    
+}
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+}
+
+.tela{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 0px;
+    left: 0px;
+    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.849)) invert() opacity(100%);
+
+
+}
+
+.i-aquino{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 500px;
+    transform: translate(-50%, -50%);
+    animation: mover-i 1s both 4s;    
+    /* filter: drop-shadow(0px 0px 200px rgba(0, 0, 0, 0.5)) invert(100%) brightness(110%) opacity(0%); */
+    filter: drop-shadow(0px 0px 200px rgba(0, 0, 0, 0.5)) invert(100%) brightness(110%) opacity(0%);
+
+}
+@keyframes mover-i {
+    0%{
+        left: 50%;
+        top: 50%;
+        width: 500px;
+        filter: drop-shadow(0px 0px 200px rgb(0, 0, 0, 0.5)) invert(100%) brightness(110%) opacity(0%);
+    }
+
+    100%{
+        left: 50%;
+        top: 50%;
+        width: 750px;
+        transform: translate(0%, -50%);
+        filter: drop-shadow(0px 0px 200px rgb(0, 0, 0, 0.5)) invert(100%) brightness(110%) opacity(100%);
+  
+    }
+}
+
+.cont-letras {
+    margin: auto;
+    animation: mover 1s both 4s;    
+    user-select: none;
+
+}
+@keyframes mover {
+    0%{
+        transform: translate(0px,0px)
+    }
+    100%{
+        transform: translate(-400px,0px)
+  
+    }
+}
+
+
+
+.letras {
+    color: white;
+    text-decoration: none;
+    font-size: 70px;
+    text-shadow: 0px 0px 200px rgba(255, 255, 255, 0.5);
+    filter: opacity(0%);
+    animation: aparicion 1s both 0s;
+    user-select: none;
+} .letras:first-child {position: relative;font-size: 100px; left:7.5px; top: 3px;}
+
+@keyframes aparicion {
+    0%{
+        filter: opacity(0%)
+    }
+    100%{
+        filter: opacity(100%)
+    }
+}
+
+.biografia-titulo {
+    position: relative;
+    font-family: "Pixelify Sans", serif;
+    display: block;
+    font-size: 40px;
+    width: 22%;
+    height: 50px;
+    left: 500%;
+    margin-top: 80px; 
+    text-align: center;
+    color: white;
+    padding: 15px 0px 15px 0px; 
+    border-radius: 10px;
+    background: rgba(2, 170, 58, 0.246);
+    box-shadow: 0px 0px 50px rgba(2, 170, 58, 0.246);
+} .biografia-titulo:hover{background: rgba(2, 170, 58, 0.185);}
+.biografia {
+    position: relative;
+    font-family: "Pixelify Sans", serif;
+    width: 45%;
+    height: 500px;
+    left: 500%;
+    transform: translate(3%,0%);
+    color: white;
+    padding: 25px;
+    font-size: 35px;
+    border-radius: 7px;
+    outline: 1px solid rgba(2, 170, 58, 0.151);
+    box-shadow: 0px 0px 50px rgba(2, 170, 58, 0.123);
+    margin-bottom: 50px; 
+    transition: all .5s none;
+
+}@keyframes mo {from{left: 500%;}to{left: 45%;}}
+.biografia:hover{box-shadow: 0px 0px 50px rgba(2, 170, 58, 0.267);}
+.yutu{text-decoration: none; color: rgba(255, 0, 0, 0.521);}
+.kick{text-decoration: none; color: rgba(0, 255, 13, 0.692);}
+
+.datos{
+    position: relative;
+    color: white;
+    font-size: 18px; 
+    top: -17px;
+    text-decoration: underline;
+    background-color: rgb(0, 0, 0)
+}
+.datos > a{color: rgba(255, 174, 0, 0.89);}
+.datos:hover > a{color: rgba(212, 145, 0, 0.89); text-shadow: 0px 0px 10px rgba(255, 174, 0, 0.671)}
+
+.capi-i{
+    position: absolute;
+    margin: auto;
+    left: -1000px;
+    top: 103vh;
+    filter: drop-shadow(0px 0px 10px rgb(0, 0, 0, 0.5)) invert(100%) brightness(110%) opacity(0%);
+}@keyframes cap {0%{left: -1000px; filter: drop-shadow(0px 0px 10px rgb(0, 0, 0, 0.5)) invert(100%) brightness(110%) opacity(0%);} 100%{left: -3%; filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5)) invert(100%) brightness(110%) opacity(100%);}}
+
+.cont-publi {
+    margin: auto;
+    margin-top: 140px;
+    width: 90%;
+    height: 180px;
+    box-shadow: 0px 0px 30px 2px rgba(5, 214, 99, 0.295);
+    border-radius: 8px; 
+    overflow: hidden;
+}.cont-publi:hover{box-shadow: 0px 0px 30px 2px rgba(7, 252, 117, 0.411); cursor: pointer;}
+.cont-publi > img {position: relative;width: 380px;filter: opacity(30%);top: -100px; left: 80px;}
+.cont-publi > .shadow-publi {
+    position: relative;
+    top:-430px;
+    margin: auto;
+    width: 100%;
+    border-radius: 8px;
+    height: 190px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.9375586348972964) 53%, rgba(0,0,0,1) 100%);
+}.text-shadow{
+    position: relative;
+    padding-left: 0px; 
+    left: 50%;
+    width: 50%;
+    height: 180px;
+    font-family: "Pixelify Sans", serif;
+}.text-shadow > h2{position:relative;font-size: 50px;top:8px;}
+.text-shadow > p{position: relative;font-size: 25px; top: -23px;left: 15px; color: rgb(189, 209, 8);}
+.text-shadow > .p2{position: relative;font-size: 25px; top: -25px;left: 20px; color: springgreen;}
+.text-shadow-btn{position: absolute; width: 100px; height: 40px;top: 125px; left: 280px; color: black; border: none; background: green}.text-shadow-btn:hover{background: rgb(0, 88, 0); cursor: pointer;}
+.text-shadow-img{position: absolute; width: 230px; top: -28px; left: 460px;filter: invert(100%); animation: vuelta 4s infinite .2s;}
+ 
+@keyframes vuelta {
+form {
+    rotate: 0deg;
+}
+to {
+    rotate: 360deg;
+}
+}
+
+
+
+.cuadro{
+    position: fixed;
+    width: 0%;
+    height: 0%;
+    outline: 2px solid rgba(255, 255, 255, 0.288);
+    border-radius: 8px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: ap .7s both 0s;
+}@keyframes ap {from{width: 0%;height: 0%;}to{width: 80%;height: 90%;}}
+.shadow-cuadro{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: ap-s .7s both 0s;
+}@keyframes ap-s {from{opacity: 0%;}to{opacity: 85%;}}
+
+
+
+.cont-juego {
+    margin: auto;
+    border-radius: 8px; 
+    margin-top: -5px;
+    width: 90%;
+    height: 600px;
+    box-shadow: 0px 0px 20px 2px rgba(3, 153, 140, 0.473);
+    margin-bottom: 130px;
+    user-select: none;
+    font-family: "Pixelify Sans", serif;
+    overflow: hidden;
+    transition: all 2s ease
+
+
+}.cont-juego:hover{box-shadow: 0px 0px 40px 1px rgba(3, 209, 192, 0.26);}
+
+
+
+.em-tetris{
+    position: absolute;
+    margin-top: 100px;
+    display: flex;
+    transform: translate(-50%,-100px);
+    left: 50%;
+    width: 90%;
+    box-shadow: none;
+    align-items: flex-end;
+
+}@keyframes b {from{top:0px;opacity:100%;}to{top:-1000px;opacity:0%;}}
+
+
+.tetris {
+    position: relative;
+    font-family: "Pixelify Sans", serif;
+    display: inline-block;
+    top: 300px;
+    left: 50%;
+    font-size: 65px;
+    transform: translate(-50%, 0%);
+}
+
+.cont-tetris {
+    position: relative;
+    width: 550px;
+    max-height: 700px;
+    outline: 2px solid white;
+    grid-row: 1/4;
+    grid-column: 2/2;
+
+}
+
+.kp{
+    position: absolute;
+    font-family: "kanit", serif;
+    left: 10px;
+    top: 95%;
+    color: rgba(255, 255, 255, 0.63);
+}.kp:hover{cursor: pointer;}
+
+.b-play {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: "Pixelify Sans", serif;
+    position: relative;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 250px;
+    margin: 0px;
+    padding: 15px;
+    background: rgba(0, 128, 0, 0.61);
+    border: none;
+}.b-play:hover {background: rgba(0, 99, 0, 0.5);}
+
+
+.b-stop{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: "Pixelify Sans", serif;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-155%,0%);
+    width: 250px;
+    margin: 0px;
+    padding: 15px;
+    background: rgba(128, 0, 0, 0.61);
+    border: none;
+    animation: ap-b .7s both 0s;
+}.b-stop:hover {background: rgba(99, 0, 0, 0.5);}
+@keyframes ap-b {from{width: 0%;}to{width: 250px;}}
+
+
+.score-tetris{
+    position: absolute;
+    font-family: "Pixelify Sans", serif;
+    font-size: 40px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-125%,0%);
+    animation: ap-c .7s both 0s;
+}
+
+.title-tetris{
+    position: absolute;
+    font-family: "Pixelify Sans", serif;
+    font-size: 100px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-150%, 0%);
+    animation: ap-c .7s both 0s;
+}
+
+canvas{
+    position: relative;
+    outline: 2px solid white;
+    top: 50%;
+    left: 60%;
+    transform: translate(0%,-50%);
+    animation: ap-c .7s both 0s;
+}@keyframes ap-c {from{width: 0%;height: 0%;}to{width: 280px;height: 600px;}}
+
+
+.advertencia{
+    position: fixed;
+    padding: 20px 10px 0px 10px;
+    background: rgba(0, 0, 0, 0.719);
+    text-align: center;
+    width: 400px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.advertencia > h1{
+    font-family: "Pixelify Sans", serif;
+    font-size: 30px
+}
+.advertencia > button{
+    font-family: "Pixelify Sans", serif;
+    font-size: 23px;
+    margin-top: 20px;
+    border: none; 
+    width: 100px;
+    height: 40px;
+}
+.btn-si{background: rgba(1, 177, 1, 0.493); margin-right: 10px}
+.btn-no{background: rgba(255, 0, 0, 0.637); margin-left: 10px}
+
+
+.footer{
+    width: 100%;
+    height: 400px;
+    margin-top: 0px;
+    box-shadow: 0px 0px 30px green;
+    background: rgb(0,0,0);
+}
+.memes{
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: center;    
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+
+
+
+.amigos{
+    background: rgba(2, 2, 2);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 95%;
+    margin: 280px auto 150px auto;
+    padding: 50px 0px 0px 0px;
+    justify-items: center;
+}
+.target{
+    position: relative;
+    background: rgb(9, 9, 9);
+    border-radius: 10px;
+    font-family: "Pixelify Sans", serif;
+    margin-bottom: 100px;
+    max-width: 420px;
+    height: 210px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+    text-align: center;
+    transition: all .3s ease;
+}.target-shadow{position: absolute;background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.438) 20%, rgba(0, 0, 0, 0.753) 100%);width: 100%;height: 100%;}
+.target > img{position: relative;height: 100%;left: 25px;grid-row: 1/3; grid-column: 2/2;}
+.target > span{text-transform: uppercase;position: relative;grid-row: 1/1; grid-column: 1/1; top: 25px; left: 10px;font-size: 30px}
+.target > p{position: relative;grid-row: 2/2; grid-column: 1/1; text-align: left; padding: 5px; font-size: 20px; padding-left: 20px; transition: all .3s ease;}
+.target:hover{max-width: 450px; height: 240px; transform: translate(0px, -15px);  margin: 0px; filter: brightness(180%); cursor: pointer;}
+.target:hover > p{margin-top: -15px}
+.amigos > h1{
+    position: absolute;
+    font-family: "Pixelify Sans", serif;
+    left: 50%;
+    transform: translate(-50%, -50px);
+    font-size: 60px;
+    margin: -100px auto 0px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 3000px){
+    .biografia{left: 50%; height: 700px; transform: translate(-50%,0%); width: 70%; font-size: 60px; overflow: auto;} @keyframes mo {from{}to{}}
+    .biografia-titulo{left: 50%; transform: translate(-50%,0%); width: 50%; margin-bottom: -10px;}
+    .datos{font-size: 30px;}
+    .capi-i{left: 50%; top: 120vh; transform: translate(0%,-47%); rotate: 30deg; filter: drop-shadow(0px 0px 200px rgb(0, 0, 0, 0.5)) invert(100%) brightness(90%) opacity(100%);}@keyframes cap {0%{} 100%{}}
+
+
+}
+
+
+
+@media only screen and (max-width: 1460px) {
+    .amigos{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+   html{
+        overflow-x: hidden;
+    }
+    .header{
+      height: 57em;
+    }
+
+    .cont-score {
+        position: relative;
+        top: -633px;
+        left: 50%;
+        transform: translate(-50%,0%);
+        width: 80%;
+        height: 50px;
+        outline: 2px solid rgba(255, 255, 255, 0.178);
+        border-radius: 8px;
+    }
+
+    
+    .cont-letras {
+        margin: auto;
+        margin-top: auto;
+        animation: mover 1s both 4s;    
+        user-select: none;
+    
+    }
+
+    .cont-score > h1{font-size: 40px; outline: none; top: -60px;}
+    .cont-juego { height: 920px;}
+
+
+    .cont-tetris {
+        top: 180px;
+        left: 50%;
+        transform: translate(-50%,0%);
+        width: 90%;
+        height: 700px;
+        outline: 2px solid white;
+    
+    }
+
+    @keyframes mover {
+        0%{
+            transform: translate(0px,0px)
+        }
+        100%{
+            transform: translate(-10px,-300px)
+      
+        }
+    }
+
+    @keyframes mover-i {
+        0%{
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            filter: drop-shadow(0px 0px 200px rgb(0, 0, 0, 0.5)) invert(100%) brightness(110%) opacity(0%);
+        }
+    
+        100%{
+            left: 50%;
+            top: 50%;
+            transform: translate(-48%, -35%);
+            width: 750px;
+            filter: drop-shadow(0px 0px 200px rgb(0, 0, 0, 0.5)) invert(100%) brightness(110%) opacity(100%);
+      
+        }
+  }
+  .capi-i{left: -1000px; top: 85em; height: 400px;}
+  @keyframes cap {0%{left: -1000px; top: 85em; rotate: 30deg;} 100%{left: 50%; top: 85em; transform: translate(-20%,0%); rotate: 30deg; filter: drop-shadow(0px 0px 200px rgb(0, 0, 0, 0.5)) invert(100%) brightness(110%) opacity(100%);}}
+    
+  .biografia-titulo {width: 60%}
+  .biografia { width: 70%; height: 700px; font-size: 40px; overflow: auto;} .datos{font-size: 24px; background-color: rgb(0, 0, 0)}
+  @keyframes mo {from{left: 500%;}to{left: 50%; transform: translate(-50%,0%)}}
+}
+
+@media only screen and (max-width: 900px){
+    .amigos{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.risa {
+    position: absolute;
+    left: -1000px;
+    grid-template-columns: 1fr 1fr;
+}
+
+}
+
+
+@media only screen and (max-width: 600px){
+    .b-play{
+        position: absolute;
+        left: -1000px;
+    }
+}
