@@ -1,3 +1,5 @@
+
+window.addEventListener("DOMContentLoaded", ()=>{
 const head = document.querySelector(".header");
 const body = document.querySelector("body");
 const letras = document.querySelectorAll(".letter-change");
@@ -71,5 +73,5 @@ twitt.addEventListener("click", ()=>{window.open("https://twitter.com/AQUINOby_0
 
 // pa = ()=>{window.scrollX(0)};setInterval(pa, 100)
 
-
+}
 
