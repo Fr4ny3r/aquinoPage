@@ -1,5 +1,4 @@
 
-window.addEventListener("DOMContentLoaded", ()=>{
 const emulationTetris = document.querySelector(".em-tetris");
 let colores = ["02af00", "FF0000","F700FF","FFF700", "000FFF","F700FF","02af00", "FF0000","F700FF","FFF700", "000FFF","F700FF"]
 function nR(){return Math.floor(Math.random()*colores.length)}
@@ -117,7 +116,7 @@ blrandom = (numer) =>{
     }
 }
 
-}
+
     blrandom(10).crearBloque()
     if(screen.width > 1700){blrandom(10).crearBloque()}
 
