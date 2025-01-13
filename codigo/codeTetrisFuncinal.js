@@ -1,5 +1,5 @@
 
-window.addEventListener("DOMContentLoaded", ()=>{
+
 let bPlay = document.querySelector(".b-play");
 let bStop = document.querySelector(".b-stop");
 
@@ -460,6 +460,6 @@ bStop.addEventListener("click",()=>{
 // setTimeout(ld, 150)
 // }
 // setTimeout(asd, 3000)
-}
+
 
 
