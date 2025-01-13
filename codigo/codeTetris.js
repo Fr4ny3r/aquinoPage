@@ -117,11 +117,11 @@ blrandom = (numer) =>{
     }
 }
 
-
+}
     blrandom(10).crearBloque()
     if(screen.width > 1700){blrandom(10).crearBloque()}
 
-}
+
 
 
 
