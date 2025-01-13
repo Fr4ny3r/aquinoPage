@@ -109,7 +109,7 @@ let bt = ["t","l","o","_","t","l","o","_","t","l","o","_"]
 
 blrandom = (numer) =>{
     block =  new crearBloques(4)
-    for(let r = 0;r <= numer; r++){            
+    for(let r = 1;r < numer; r++){            
             let rt = Math.floor(Math.random()*bt.length)    
 
         block.crearBloque(bt[rt])
